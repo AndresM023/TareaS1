@@ -1,16 +1,12 @@
 #Estudiante:Carlos Andrés Molina Jaramillo
 
-
-
 import math 
 from datetime import date
 
 class Operaciones:
-
-     
+   
      #TIPOS DE DATOS Y ACCIONES ELEMENTALES
-
-     
+    
      #Dados dos números calcule la suma, resta, multiplicación, división y módulo
      def operacionesBasicas(self):
           num1 = int(input("Ingrese un número: "))
@@ -60,8 +56,7 @@ class Operaciones:
           hround = round(h, 2)
           print("La hipotenusa es: {}".format(hround),"cm")
 
-     
-    
+         
      #Dado un número, imprimir 0 si es par y 1 si es impar        
      def paridadImparidad(self):
           num1 = int(input("Ingrese un número: "))
@@ -70,9 +65,7 @@ class Operaciones:
                print("El número {}".format(num1),"es 0 par")
           else:
                print("El número {}".format(num1),"es 1 impar")
-               
-
-     
+                  
      #Dado un número binario de cuatro dígitos, imprimir su bit de paridad. El bit de paridad es 1 si el número de bits 1 es impar 
      #y 0 en caso contrario
      def bitParidad(self):
@@ -89,7 +82,6 @@ class Operaciones:
           else:
                print("El bit de paridad es 1")
 
-   
      #Dado un número binario de cuatro dígitos imprimir su valor
      def imprimirValor(self):
           nbin = str(input("Ingrese un número binario que conste de 4 dígitos: "))
@@ -119,8 +111,7 @@ class Operaciones:
 
 
      #ESTRUCTURAS DE CONTROL DE FLUJO DE DATOS
-
-     
+    
      #Todos los años que se dividen exactamente entre 400, o que son divisibles exactamente entre 4 y no son divisibles
      #exactamente entre 100, son años bisiestos. Usando estas premisas crea un algoritmo que lea una fecha como un número entero
      #con el formato ddmmaaaa, y luego extraiga el año de la fecha indicando si el mismo es un año bisiesto o no     
@@ -182,7 +173,6 @@ class Operaciones:
                
           else:
                print("El valor es negativo, ingrese un dato positivo: ")
-
      
      #Dados tres números enteros positivos A,B y C, determine,¿cuál de ellos es el mayor? y ¿cuál es el segundo mayor?
      def ComparacionMayorQue(self):
@@ -219,9 +209,6 @@ class Operaciones:
           else:
                print("Ingrese un número positivo")
 
-    
-
-
      #El IMC resulta de la división de la masa del individuo (en kilogramos) entre el cuadrado de la estatura (en metros)
      #El índice de masa corporal es un indicador del peso de una persona en relación con su altura.
      #Dado el peso de una persona en libras (1 libra = 0,453592 Kg) y su estatura en centímetros, calcule su IMC e indique como salida el peso en kilogramos, el valor
@@ -254,10 +241,10 @@ class Operaciones:
                print("Obesidad híper-mórbida")
           else:
                pass
-
-     
+    
      #Escriba un algoritmo que reciba una fecha (día y mes) correspondiente al año 2014
      #e imprima por pantalla el número de días que han pasado desde el 1 de Enero de 2014 hasta la fecha dada
+     
      def recibirFecha(self):
           Mes = int(input("Indicar el Mes por número, ingresar valor: "))
           Días = int(input("Indicar el número del día, ingresar valor: "))
@@ -339,7 +326,6 @@ class Operaciones:
           else:
                print("No es capicúa")
 
- 
      #Dado un número N determinar si es un número primo   
      def númeroprimo(self):
           nprimo = int(input("Ingresar un número: "))
@@ -351,7 +337,6 @@ class Operaciones:
                     print("El número {}".format(nprimo),"sí es primo")
                break
      
-    
      #Construya un programa que dado un valor entero N, haga el cálculo de la función factorial
      #estructuras iterativas
      def factorial(self):
@@ -368,9 +353,7 @@ class Operaciones:
                          num = num * resultado1
                          resultado1 = resultado1 - 1               
                     print("El factorial es: {} ".format(num))
-               break
-
-    
+               break  
 
      #Dado un número entero N que representa una contraseña y asumiendo que una contraseña
      #debe tener al menos 10 dígitos para ser segura, determine si la contraseña ingresada por el
@@ -415,7 +398,6 @@ class Operaciones:
                if dato < menor:
                     menor = dato
           return mayor, menor
-
      
      #Se tiene una secuencia de enteros terminada en cero, que corresponde a la edad,
      # peso y estatura de una muestra de hombres y mujeres mayores de 18 años. Con
@@ -494,10 +476,7 @@ class Operaciones:
           else:
                promedio = suma / contador
                print("El promedio de los {}".format(contador), "números es igual a : {}".format(promedio))
-          
-
-
-      
+             
      
      #PROCEDIMIENTOS (ACCIONES Y FUNCIONES)
      
@@ -524,8 +503,6 @@ class Operaciones:
                     promedio = sum(lista) / len(lista)
                     return promedio          
           
-
-     
      #Escriba una función que calcule el perímetro del pentágono (siendo el perímetro la suma de los lados del polígono)
      def p_pentágono(self): 
           acum = 0
@@ -537,10 +514,7 @@ class Operaciones:
      def perimetro(acum, lado):
           acum = acum + lado
           return acum
-    
-         
-     
-          
+           
      #Construya una función "Eleva" que reciba como parámetros una base y un exponente y retorne al algoritmo principal
      #el resultado de elevar un número al otro
      def Eleva(self):
@@ -554,8 +528,6 @@ class Operaciones:
      def potencia(self, base, exponente):  
           potencia = base ** exponente
           return potencia
-          
-
 
      #En una empresa pagan según las horas trabajadas y una tarifa fija por hora. Si la cantidad de horas trabajadas 
      #en una semana es mayor a 40, la tarifa se incrementa en un 35% para las horas extras. Escribe una acción princial 
@@ -607,15 +579,6 @@ class Operaciones:
                distancias_en_millas = float(input("Ingresar una distancia: "))
                milla_a_km = distancias_en_millas * 1.60935
                return milla_a_km
-          
-         
-         
-
-
-
-
-
-
 
 andres = Operaciones()
 
