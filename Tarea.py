@@ -1,7 +1,5 @@
 #Estudiante:Carlos Andrés Molina Jaramillo
 
-#Dados 2 números, calcule la suma, resta, multiplicación, división y módulo
-
 #Ejercicio 1
 
 import math 
