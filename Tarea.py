@@ -1,6 +1,6 @@
 #Estudiante:Carlos Andrés Molina Jaramillo
 
-#Ejercicio 1
+
 
 import math 
 from datetime import date
