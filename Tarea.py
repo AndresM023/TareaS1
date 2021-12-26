@@ -1,19 +1,14 @@
 #Estudiante:Carlos Andrés Molina Jaramillo
 
-#Dados 2 números, calcule la suma, resta, multiplicación, división y módulo
-
-#Ejercicio 1
 
 import math 
 from datetime import date
 
 class Operaciones:
-
-     
-     #TIPOS DE DATOS Y ACCIONES ELEMENTALES
-
-     
+ 
+     #TIPOS DE DATOS Y ACCIONES ELEMENTALES 
      #Dados dos números calcule la suma, resta, multiplicación, división y módulo
+     
      def operacionesBasicas(self):
           num1 = int(input("Ingrese un número: "))
           num2 = int(input("Ingrese un número: "))
@@ -29,8 +24,7 @@ class Operaciones:
           print("La multiplicación es: {}".format(p))
           print("La división es: {}".format(cround))
           print("El módulo es: {}".format(m))  
-
-    
+   
      #Dados tres números, hacer una aplicación que calcule la resolvente
      def resolvente(self):
           num1 = int(input("Ingrese un número: "))
@@ -51,8 +45,7 @@ class Operaciones:
           else:
                x3 = "No existe solución"
                print(x3)
-
-     
+   
      #Dados dos lados de un triángulo en cm, calcular la hipotenusa del mismo
      def hipotenusa(self):
           num1 = int(input("Ingrese un número: "))
@@ -61,8 +54,7 @@ class Operaciones:
           h = math.sqrt((num1)**2 + (num2)**2)
           hround = round(h, 2)
           print("La hipotenusa es: {}".format(hround),"cm")
-
-     
+   
     
      #Dado un número, imprimir 0 si es par y 1 si es impar        
      def paridadImparidad(self):
@@ -73,8 +65,7 @@ class Operaciones:
           else:
                print("El número {}".format(num1),"es 1 impar")
                
-
-     
+   
      #Dado un número binario de cuatro dígitos, imprimir su bit de paridad. El bit de paridad es 1 si el número de bits 1 es impar 
      #y 0 en caso contrario
      def bitParidad(self):
@@ -121,8 +112,7 @@ class Operaciones:
 
 
      #ESTRUCTURAS DE CONTROL DE FLUJO DE DATOS
-
-     
+   
      #Todos los años que se dividen exactamente entre 400, o que son divisibles exactamente entre 4 y no son divisibles
      #exactamente entre 100, son años bisiestos. Usando estas premisas crea un algoritmo que lea una fecha como un número entero
      #con el formato ddmmaaaa, y luego extraiga el año de la fecha indicando si el mismo es un año bisiesto o no     
@@ -259,7 +249,6 @@ class Operaciones:
                mp = mp + 2.50
           print("El dueño del vehículo pagará Bs.",mp)
 
-
      #El IMC resulta de la división de la masa del individuo (en kilogramos) entre el cuadrado de la estatura (en metros)
      #El índice de masa corporal es un indicador del peso de una persona en relación con su altura.
      #Dado el peso de una persona en libras (1 libra = 0,453592 Kg) y su estatura en centímetros, calcule su IMC e indique como salida el peso en kilogramos, el valor
@@ -293,7 +282,6 @@ class Operaciones:
           else:
                pass
 
-     
      #Escriba un algoritmo que reciba una fecha (día y mes) correspondiente al año 2014
      #e imprima por pantalla el número de días que han pasado desde el 1 de Enero de 2014 hasta la fecha dada
      def recibirFecha(self):
@@ -339,7 +327,6 @@ class Operaciones:
           else:
                pass
 
-   
      #En un almacén se hace un 20% de descuento a los clientes cuya compra supere
      #los Bs 1000, se desea que realice un algoritmo el cual tome por entrada el monto a
      #pagar por el cliente y arroje como salida el monto aplicando el descuento de ser
@@ -367,7 +354,6 @@ class Operaciones:
                print("El número tiene: {}".format(digitos),"dígitos")
                break
 
-   
      #Dado un número, determine si es capicúa
      def determinarCapicúa(self):    
           d = int(input("Ingresar un valor capicúa: "))
@@ -376,7 +362,6 @@ class Operaciones:
                print("Es capicúa")
           else:
                print("No es capicúa")
-
  
      #Dado un número N determinar si es un número primo   
      def númeroprimo(self):
@@ -388,8 +373,7 @@ class Operaciones:
                else:
                     print("El número {}".format(nprimo),"sí es primo")
                break
-     
-    
+      
      #Construya un programa que dado un valor entero N, haga el cálculo de la función factorial
      #estructuras iterativas
      def factorial(self):
@@ -407,8 +391,6 @@ class Operaciones:
                          resultado1 = resultado1 - 1               
                     print("El factorial es: {} ".format(num))
                break
-
-    
 
      #Dado un número entero N que representa una contraseña y asumiendo que una contraseña
      #debe tener al menos 10 dígitos para ser segura, determine si la contraseña ingresada por el
@@ -453,8 +435,7 @@ class Operaciones:
                if dato < menor:
                     menor = dato
           return mayor, menor
-
-     
+  
      #Se tiene una secuencia de enteros terminada en cero, que corresponde a la edad,
      # peso y estatura de una muestra de hombres y mujeres mayores de 18 años. Con
      #base en dicha secuencia se desea realizar un estudio a fin de conocer:
@@ -532,9 +513,6 @@ class Operaciones:
           else:
                promedio = suma / contador
                print("El promedio de los {}".format(contador), "números es igual a : {}".format(promedio))
-          
-
-
       
      
      #PROCEDIMIENTOS (ACCIONES Y FUNCIONES)
@@ -562,8 +540,7 @@ class Operaciones:
                     promedio = sum(lista) / len(lista)
                     return promedio          
           
-
-     
+  
      #Escriba una función que calcule el perímetro del pentágono (siendo el perímetro la suma de los lados del polígono)
      def p_pentágono(self): 
           acum = 0
@@ -575,9 +552,7 @@ class Operaciones:
      def perimetro(acum, lado):
           acum = acum + lado
           return acum
-    
-         
-     
+      
           
      #Construya una función "Eleva" que reciba como parámetros una base y un exponente y retorne al algoritmo principal
      #el resultado de elevar un número al otro
@@ -593,8 +568,6 @@ class Operaciones:
           potencia = base ** exponente
           return potencia
           
-
-
      #En una empresa pagan según las horas trabajadas y una tarifa fija por hora. Si la cantidad de horas trabajadas 
      #en una semana es mayor a 40, la tarifa se incrementa en un 35% para las horas extras. Escribe una acción princial 
      #que solicite la identificación de 5 empleados, el monto cancelado por hora, y la cantidad de horas trabajadas por 
@@ -646,8 +619,7 @@ class Operaciones:
                milla_a_km = distancias_en_millas * 1.60935
                return milla_a_km
           
-         
-         
+                 
 andres = Operaciones()
 andres.estacionamiento()
 
