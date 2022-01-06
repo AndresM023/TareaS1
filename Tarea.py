@@ -71,11 +71,11 @@ class Operaciones:
      def bitParidad(self):
           binario = str(input("Ingrese un número binario de 4 dígitos: "))
           
-          bid = int(binario[0])
-          bid1 = int(binario[1])
+          bit1 = int(binario[0])
+          bit2 = int(binario[1])
           bit3 = int(binario[2])
           bit4 = int(binario[3])
-          contador = bid + bid1 + bit3 + bit4
+          contador = bit1 + bit2 + bit3 + bit4
 
           if contador % 2 == 0:
                print("El bit de paridad es 0")
